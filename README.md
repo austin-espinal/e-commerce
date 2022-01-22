@@ -36,10 +36,47 @@ The link above is a link to the application direction video/showcase
 Start the server by typing "npm start". Then use Insomnia to try the each of the routes.
 
 Category:
+USE localhost:3001/api/categories
+-GET FindAll: it will show all categories in the database.
+-POST Create: allows you to create a new category. must put in json format.
+example {
+           "category_name": "Sandals"
+        }
+
+USE localhost:3001/api/categories/:id
+-GET FindOne: it will show the category by the id specified by you.
+-PUT Update: it will update the catergory by the id specified by you. must put in json format.
+-Delete: it will delete the catergory by the id specified by you.
 
 Product:
+USE localhost:3001/api/products
+-GET FindAll: it will show all products in the database.
+-POST Create: allows you to create a new product. must put in json format.
+example {
+           "product_name": "Basketball",
+           "price": 200.00,
+           "stock": 3,
+           "tagIds": [1, 2, 3, 4]
+        }
+
+USE localhost:3001/api/products/:id
+-GET FindOne: it will show the product by the id specified by you.
+-PUT Update: it will update the product by the id specified by you. must put in json format. use exact scheme in POST example to update.
+-Delete: it will delete the product by the id specified by you.
 
 Tag:
+
+USE localhost:3001/api/tags
+-GET FindAll: it will show all tags in the database.
+-POST Create: allows you to create a new tag. must put in json format.
+example {
+           "tag_name": "orange"
+        }
+
+USE localhost:3001/api/tags/:id
+-GET FindOne: it will show the tag by the id specified by you.
+-PUT Update: it will update the tag by the id specified by you. must put in json format.
+-Delete: it will delete the tag by the id specified by you.
 
 ## Contributing
 

@@ -16,10 +16,6 @@ router.get('/', (req, res) => {
       {
         model: Tag,
         attributes: ['id', 'tag_name']
-      },
-      {
-        model: ProductTag,
-        attributes: ['id', 'product_id', 'tag_id']
       }
     ]
   })
@@ -46,10 +42,6 @@ router.get('/:id', (req, res) => {
       {
         model: Tag,
         attributes: ['id', 'tag_name']
-      },
-      {
-        model: ProductTag,
-        attributes: ['id', 'product_id', 'tag_id']
       }
     ]
   })
@@ -58,7 +50,7 @@ router.get('/:id', (req, res) => {
         res.status(404).json({ message: 'No product found with this id' });
         return;
       }
-      res.json(dbUserData);
+      res.json(dbData);
     })
     .catch(err => {
       console.log(err);

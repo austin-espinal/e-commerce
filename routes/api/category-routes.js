@@ -40,7 +40,7 @@ router.get('/:id', (req, res) => {
         res.status(404).json({ message: 'No category found with this id' });
         return;
       }
-      res.json(dbUserData);
+      res.json(dbData);
     })
     .catch(err => {
       console.log(err);

@@ -30,7 +30,7 @@ The database needed for the application will need to be set up as well. First, l
 
 ## Usage 
 
-()
+(https://watch.screencastify.com/v/QTkpRx3LGjrXerky5eRI)
 The link above is a link to the application direction video/showcase
 
 Start the server by typing "npm start". Then use Insomnia to try the each of the routes.
